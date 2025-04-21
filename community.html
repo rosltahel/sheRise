@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SheRise | Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .section-title {
+      color: #ff6b9c;
+      font-weight: bold;
+    }
+    .group-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .group-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-danger fw-bold" href="index.html">SheRise</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Community</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Community Section -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">Our Community</h2>
+      <p class="mb-5 text-muted">Connect with inspiring women across the USA based on your age and interests.</p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card group-card p-4">
+            <h4>Under 20</h4>
+            <p class="text-muted">For teens navigating school, early goals, and friendships. Find mentors and confidence here!</p>
+            <a href="#" class="btn btn-outline-danger mt-2">Explore</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card group-card p-4">
+            <h4>20 - 30</h4>
+            <p class="text-muted">This space is for women stepping into adulthood, jobs, independence, or exploring life in the USA.</p>
+            <a href="#" class="btn btn-outline-danger mt-2">Explore</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card group-card p-4">
+            <h4>Above 30</h4>
+            <p class="text-muted">Connect with professionals, moms, creators, and leaders building community and legacy.</p>
+            <a href="#" class="btn btn-outline-danger mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-3 mt-5 border-top">
+    <small>&copy; 2025 SheRise. All rights reserved.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

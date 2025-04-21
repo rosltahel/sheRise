@@ -3,247 +3,460 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SheRise</title>
+  <title>Ahmad's Halal Cuts</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    body {
+      padding-top: 70px;
+    }
     .navbar-brand {
       font-weight: bold;
-      font-size: 1.5rem;
-      color: #ff6b9c !important;
+      font-size: 1.8rem;
+      color: #d62828 !important;
     }
     .nav-link {
-      color: #555 !important;
+      color: #333 !important;
       font-weight: 500;
     }
     .nav-link:hover {
-      color: #ff6b9c !important;
+      color: #d62828 !important;
     }
     .navbar {
       background-color: #fff;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    .hero {
+      background: url('images/steak.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">SheRise</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
-          <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+ <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Ahmad's Halal Cuts</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </ul>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#appointment">Book Appointment</a></li>
+        <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Cart, Login, Signup -->
+      <div class="d-flex align-items-center gap-3">
+        <!-- Cart Button -->
+        <a href="#cart" class="btn btn-outline-dark position-relative rounded-pill">
+          🛒 Cart
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+            <span class="visually-hidden">cart items</span>
+          </span>
+        </a>
+
+        <!-- Login & Signup Buttons -->
+        <a href="#login" class="btn btn-outline-secondary rounded-pill">Login</a>
+        <a href="#signup" class="btn btn-danger rounded-pill">Sign Up</a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+<!-- Navbar End -->
+
   <!-- Navbar End -->
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Hero Section Start -->
-<section class="py-5 mt-5 bg-light text-center">
+  <section class="hero">
     <div class="container">
-      <h1 class="display-4 fw-bold text-dark">Welcome to SheRise 🌸</h1>
-      <p class="lead text-secondary mt-3">
-        A platform for women in the USA to connect, grow, and rise — especially those navigating life in a new country.
-      </p>
-      <a href="#" class="btn btn-primary btn-lg mt-4" style="background-color: #ff6b9c; border: none;">
-        Join Our Sisterhood
-      </a>
+      <h1>Welcome to Ahmad's Halal Cuts</h1>
+      <p class="lead mt-3"><strong> Ethical. Halal. Serving Maryland with premium meat and trusted slaughtering services.</strong></p>
+      <a href="#appointment" class="btn btn-danger btn-lg mt-4">Book Now</a>
+      <a href="#shop" class="btn btn-outline-light btn-lg mt-4 ms-3">Shop Meat</a>
     </div>
   </section>
   <!-- Hero Section End -->
-  
 
 
-  <!-- Age Groups Section Start -->
-<section class="py-5 text-center">
-    <div class="container">
-      <h2 class="mb-4 fw-bold">Explore Your Space</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-pink">Under 20</h5>
-              <p class="card-text">A safe, supportive space for teens to learn, grow, and express themselves.</p>
-              <a href="#" class="btn btn-outline-pink">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-pink">20–30</h5>
-              <p class="card-text">Connect with like-minded women navigating careers, education, and life transitions.</p>
-              <a href="#" class="btn btn-outline-pink">Discover</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-pink">30+</h5>
-              <p class="card-text">Empowering women balancing family, careers, and personal growth.</p>
-              <a href="#" class="btn btn-outline-pink">Join In</a>
-            </div>
-          </div>
+
+
+
+
+ <!-- About Section Start -->
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="images/ahmed.jpeg" class="img-fluid rounded shadow" alt="Ahmad the Butcher">
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-success fw-bold mb-3">Meet Ahmad — Your Trusted Halal Butcher</h2>
+        <p class="lead text-muted">
+          Behind every perfect cut is a story. Ahmad Abuzant isn’t just a butcher — he’s a man with a mission: to bring ethically sourced, halal-certified meats to families across Maryland with care, tradition, and respect.
+        </p>
+        <p>
+          Raised with deep roots in halal traditions, Ahmad blends faith, professionalism, and a passion for quality into every service he offers. Whether it's for your Eid celebration or your weekly dinner, Ahmad makes sure every cut meets the highest standards of cleanliness, compassion, and halal integrity.
+        </p>
+        <div class="border-start border-3 ps-3 mt-4" style="border-color: #dc3545;">
+          <p class="fw-semibold mb-0 text-dark">
+            "I believe in more than just meat. I believe in trust, family, and serving my community the right way — the halal way." <br> – Ahmad
+          </p>
         </div>
       </div>
     </div>
-  </section>
-  <!-- Age Groups Section End -->
+  </div>
+</section>
+<!-- About Section End -->
 
-  
- <!-- Why SheRise Section Start -->
-<section class="py-5 text-center">
-    <div class="container">
-      <h2 class="fw-bold mb-4">Why SheRise?</h2>
-      <p class="mb-4 text-muted">
-        SheRise is built by and for women like you — women who are brave enough to start fresh, seek new opportunities, and build each other up.
-      </p>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">🌍 New to the USA?</h5>
-              <p class="card-text">Find a welcoming space to ask questions, make friends, and learn about life in a new country.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">💼 Looking for Work?</h5>
-              <p class="card-text">Access job tips, resume help, and connect with mentors who’ve been in your shoes.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">🚀 Got Big Dreams?</h5>
-              <p class="card-text">Meet women founders, get inspired, and take your first steps toward launching something amazing.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Why SheRise Section End -->
-  
 
-  
-  <!-- Community Highlights Section Start -->
-<section class="py-5 bg-light">
+
+
+
+<!-- Appointment Section Start -->
+<section id="appointment" class="py-5 text-white" style="background: #000 url('https://images.unsplash.com/photo-1604335399102-0736e31f883d') center/cover no-repeat;">
+  <div style="background-color: rgba(0,0,0,0.6); padding: 3rem 1rem;">
     <div class="container text-center">
-      <h2 class="fw-bold mb-5">Voices from the Community</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-              <p class="card-text">"SheRise helped me find confidence and community. I’m no longer walking this journey alone." <br><strong>– Maya, 19</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-              <p class="card-text">"A beautiful space for women like me to share, grow, and learn from others." <br><strong>– Amina, 27</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-              <p class="card-text">"After turning 30, SheRise reminded me that it's never too late to reinvent yourself." <br><strong>– Sara, 34</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Community Highlights Section End -->
+      <h2 class="fw-bold mb-4">📅 Book Your Halal Appointment</h2>
 
-  <!-- Resources Section Start -->
-<section class="py-5 bg-white text-center">
-    <div class="container">
-      <h2 class="fw-bold mb-4">Resources</h2>
-      <p class="text-muted mb-4">Explore content created for your personal and professional growth.</p>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-pink">Career Guides</h5>
-              <p class="card-text">From writing a CV to acing your first interview — we’ve got you covered.</p>
-              <a href="#" class="btn btn-outline-pink">View More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-pink">Wellness Tips</h5>
-              <p class="card-text">Self-care routines, mental health support, and wellness ideas.</p>
-              <a href="#" class="btn btn-outline-pink">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-pink">Videos & Talks</h5>
-              <p class="card-text">Watch inspiring women share their stories and lessons.</p>
-              <a href="#" class="btn btn-outline-pink">Watch Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Resources Section End -->
+      <!-- WhatsApp Quick Link -->
+      <p class="lead mb-4">For quick questions or to book directly, message Ahmad on WhatsApp:</p>
+      <a href="https://wa.me/14435428973" target="_blank" class="btn btn-success btn-lg rounded-pill mb-5">
+        <i class="bi bi-whatsapp me-2"></i> Chat with Ahmad
+      </a>
 
-  <!-- Sign-Up Section Start -->
-<section class="py-5 bg-light text-center">
-    <div class="container">
-      <h2 class="fw-bold mb-4">Ready to Rise?</h2>
-      <p class="text-muted mb-4">Sign up to be part of a growing community of empowered women.</p>
-      <form class="row g-3 justify-content-center">
-        <div class="col-md-6">
-          <input type="email" class="form-control" placeholder="Enter your email">
-        </div>
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary" style="background-color: #ff6b9c; border: none;">Join Now</button>
-        </div>
+      <!-- Appointment Form -->
+      <form class="bg-white text-dark p-4 rounded-4 shadow-sm mx-auto" style="max-width: 500px;">
+        <input type="text" class="form-control mb-3 rounded-pill" placeholder="Full Name" required>
+        <input type="tel" class="form-control mb-3 rounded-pill" placeholder="Phone Number" required>
+        <input type="date" class="form-control mb-3 rounded-pill" required>
+
+        <!-- Type of Animal -->
+        <select class="form-control mb-3 rounded-pill" required>
+          <option value="">Select Animal Type</option>
+          <option value="Sheep">Sheep</option>
+          <option value="Cow">Cow</option>
+          <option value="Goat">Goat</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <!-- Number of Animals -->
+        <input type="number" class="form-control mb-3 rounded-pill" placeholder="Number of Animals" min="1" required>
+
+        <textarea class="form-control mb-3 rounded-4" rows="3" placeholder="Any notes or special requests..."></textarea>
+        <button type="submit" class="btn btn-danger btn-lg rounded-pill w-100">Send Request</button>
       </form>
     </div>
-  </section>
-  <!-- Sign-Up Section End -->
+  </div>
+
+
+
 
   
-  <!-- Footer Start -->
-<footer class="py-4 bg-white border-top text-center">
-    <div class="container">
-      <p class="mb-1 text-muted">&copy; 2025 SheRise. All rights reserved.</p>
-      <div>
-        <a href="#" class="text-decoration-none me-3 text-pink">Instagram</a>
-        <a href="#" class="text-decoration-none me-3 text-pink">Facebook</a>
-        <a href="#" class="text-decoration-none text-pink">Twitter</a>
+</section>
+<!-- Appointment Section End -->
+
+
+
+
+
+
+<!-- Shop Section Start -->
+<section id="shop" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">🛒 Our Fresh Halal Cuts</h2>
+
+    <!-- Row for Products -->
+    <div class="row g-4">
+      <!-- Beef Steaks -->
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+          <img src="images/beef.jpg" class="card-img-top" alt="Beef Steak">
+          <div class="card-body text-center">
+            <h5 class="card-title">Beef Steak</h5>
+            <p class="card-text">Tender cuts of halal beef, perfect for grilling. Fresh and juicy.</p>
+            <p class="text-danger fw-bold">$19.99 / lb</p>
+            <button class="btn btn-danger rounded-pill px-4">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lamb Chops -->
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+          <img src="images/lamb.jpg" class="card-img-top" alt="Lamb Chops">
+          <div class="card-body text-center">
+            <h5 class="card-title">Lamb Chops</h5>
+            <p class="card-text">Juicy and flavorful halal lamb chops. Ideal for special occasions or BBQs.</p>
+            <p class="text-danger fw-bold">$24.99 / lb</p>
+            <button class="btn btn-danger rounded-pill px-4">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chicken Breast -->
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+          <img src="images/chicken.jpg" class="card-img-top" alt="Chicken Breast">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chicken Breast</h5>
+            <p class="card-text">Lean halal chicken breast cuts for a healthy and delicious meal.</p>
+            <p class="text-danger fw-bold">$12.99 / lb</p>
+            <button class="btn btn-danger rounded-pill px-4">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ground Beef -->
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+          <img src="images/ground.png" class="card-img-top" alt="Ground Beef">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ground Beef</h5>
+            <p class="card-text">Halal ground beef, ideal for burgers, meatballs, and more.</p>
+            <p class="text-danger fw-bold">$14.99 / lb</p>
+            <button class="btn btn-danger rounded-pill px-4">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- فوارغ (Fawaregh) -->
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+          <img src="images/fawaregh.png" class="card-img-top" alt="Fawaregh">
+          <div class="card-body text-center">
+            <h5 class="card-title">فوارغ (Fawaregh)</h5>
+            <p class="card-text">A delicacy in Palestinian cuisine, perfect for grilling or stews. A traditional favorite.</p>
+            <p class="text-danger fw-bold">$X.XX / lb</p>
+            <button class="btn btn-danger rounded-pill px-4">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- كبدة (Kibda) -->
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+          <img src="images/kibdda.png" class="card-img-top" alt="Kibda">
+          <div class="card-body text-center">
+            <h5 class="card-title">كبدة (Kibda)</h5>
+            <p class="card-text">Grilled or in sandwiches, this rich, flavorful liver is a staple in Arab kitchens.</p>
+            <p class="text-danger fw-bold">$X.XX / lb</p>
+            <button class="btn btn-danger rounded-pill px-4">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+     
+
+      <!-- قلوب (Qulub) -->
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+          <img src="images/qulub.jpg" class="card-img-top" alt="Qulub">
+          <div class="card-body text-center">
+            <h5 class="card-title">قلوب (Qulub)</h5>
+            <p class="card-text">Hearts grilled or cooked, a protein-packed delight with a rich flavor.</p>
+            <p class="text-danger fw-bold">$X.XX / lb</p>
+            <button class="btn btn-danger rounded-pill px-4">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Voice-to-Order Feature -->
+<div class="mt-5 p-4 bg-light rounded-4 shadow-sm">
+  <h4 class="text-center fw-bold mb-3">🎙️ Prefer to Speak Your Order?</h4>
+  <p class="text-center mb-4">Click below and tell us what you need in English or Arabic — we understand both!</p>
+
+  <div class="d-flex justify-content-center mb-3">
+    <label for="languageSelect" class="me-2 fw-semibold">Choose Language:</label>
+    <select id="languageSelect" class="form-select w-auto">
+      <option value="en-US" selected>English</option>
+      <option value="ar-EG">Arabic</option>
+    </select>
+  </div>
+
+  <div class="d-flex flex-column align-items-center">
+    <button id="voiceBtn" class="btn btn-danger rounded-pill px-4 mb-3">🎤 Start Voice Order</button>
+    <textarea id="voiceText" class="form-control text-center" rows="3" placeholder="Your spoken order will appear here..." readonly></textarea>
+  </div>
+</div>
+
+</section>
+<!-- Shop Section End -->
+
+<!-- Voice Recognition Script -->
+<script>
+const voiceBtn = document.getElementById('voiceBtn');
+const voiceText = document.getElementById('voiceText');
+
+if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognition();
+
+  recognition.lang = 'en-US';
+  recognition.continuous = false;
+  recognition.interimResults = false;
+
+  voiceBtn.addEventListener('click', () => {
+    voiceText.placeholder = "Listening...";
+    recognition.start();
+  });
+
+  recognition.onresult = function (event) {
+    const transcript = event.results[0][0].transcript;
+    voiceText.value = transcript;
+  };
+
+  recognition.onerror = function (event) {
+    voiceText.value = "Error: " + event.error;
+  };
+} else {
+  voiceBtn.disabled = true;
+  voiceText.value = "Voice recognition is not supported in this browser.";
+}
+</script>
+</section>
+<!-- Shop Section End -->
+
+
+
+
+
+<!-- Cart Section Start -->
+<section id="cart" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">🛒 Your Cart</h2>
+
+    <div class="table-responsive">
+      <table class="table align-middle text-center">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Subtotal</th>
+            <th scope="col">Remove</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="text-end mt-4">
+      <h4>Total: $<span id="cart-total">0.00</span></h4>
+      <a href="#checkout" class="btn btn-danger btn-lg rounded-pill mt-2">Proceed to Checkout</a>
+    </div>
+  </div>
+</section>
+<!-- Cart Section End -->
+
+
+
+
+<!-- Contact Section Start -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">📞 Contact Us</h2>
+    
+    <div class="row g-4">
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label fw-bold">Name</label>
+            <input type="text" class="form-control rounded-pill" id="name" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email</label>
+            <input type="email" class="form-control rounded-pill" id="email" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-bold">Message</label>
+            <textarea class="form-control rounded-4" id="message" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-danger rounded-pill px-4">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6">
+        <div class="p-4 border rounded-4 bg-white shadow-sm h-100">
+          <h5 class="fw-bold mb-3">📍 Location</h5>
+          <p>123 Halal Lane, Glen Burnie, MD, USA</p>
+          <h5 class="fw-bold mb-3">📞 Phone</h5>
+          <p><a href="tel:+11234567890" class="text-decoration-none text-dark">+1 (123) 456-7890</a></p>
+          <h5 class="fw-bold mb-3">✉️ Email</h5>
+          <p><a href="mailto:ahmad.abuzant@gmail.com" class="text-decoration-none text-dark">info@ahmadhalalcuts.com</a></p>
+          <h5 class="fw-bold mb-3">⏰ Hours</h5>
+          <p>Mon - Sat: 9:00 AM – 6:00 PM<br>Sunday: Closed</p>
+        </div>
       </div>
     </div>
-  </footer>
-  <!-- Footer End -->
+  </div>
+</section>
+<!-- Contact Section End -->
 
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    
+    const languageSelect = document.getElementById('languageSelect');
+  
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+  
+      recognition.continuous = false;
+      recognition.interimResults = false;
+  
+      voiceBtn.addEventListener('click', () => {
+        recognition.lang = languageSelect.value;
+        voiceText.placeholder = "🎧 Listening...";
+        recognition.start();
+      });
+  
+      recognition.onresult = function (event) {
+        const transcript = event.results[0][0].transcript;
+        voiceText.value = transcript;
+      };
+  
+      recognition.onerror = function (event) {
+        voiceText.value = "Error: " + event.error;
+      };
+    } else {
+      voiceBtn.disabled = true;
+      voiceText.value = "Your browser doesn't support speech recognition.";
+    }
+  </script>
   
   
 </body>
