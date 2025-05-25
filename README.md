@@ -1,5 +1,4 @@
 
-![image](https://github.com/user-attachments/assets/6acbc434-0857-4d98-ac51-f6fbd6c664ca)
 
 # Ahmad’s Halal Cuts 🐄🕌
 
@@ -37,7 +36,12 @@ A responsive web application designed to streamline the process of **booking hal
 
 ## 🖼 Screenshots
 
-> _Coming soon!_ You can add screenshots of the UI to showcase the appointment flow and product catalog.
+![image](https://github.com/user-attachments/assets/6acbc434-0857-4d98-ac51-f6fbd6c664ca)
+![image](https://github.com/user-attachments/assets/9a6e2194-67e8-44d4-8e35-bfb31005c1cd)
+![image](https://github.com/user-attachments/assets/f442f4bf-29c1-4f03-8912-60a0f192398b)
+![image](https://github.com/user-attachments/assets/974684bd-4607-4fae-a62c-f7a3aad97e85)
+![image](https://github.com/user-attachments/assets/69283e71-3ca8-4359-b14b-e8e28a856727)
+
 
 ---
 
